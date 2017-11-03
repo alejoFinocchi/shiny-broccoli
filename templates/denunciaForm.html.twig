@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{%block content%}
+
+<h1>Crear denuncia</h1>
+<form name="denuncia" id="id-denuncia" method="POST" action="?action=denuncia_new">
+    <div>
+        <label for="direccion"> Direccion</label>
+        <input type="text" name="direccion" required>
+    </div>
+    <div>
+        <label for="cant_menores"> Cantidad de menores</label>
+        <input type="number" name="cant_menores" required>
+    </div>
+    <div>
+        <label for="despricion"> descripcion</label>
+        <input type="text" name="descripcion" required>
+    </div>
+    <input type="submit" value="Ingresar">
+</form>
+{%endblock%}

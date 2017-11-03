@@ -1,0 +1,21 @@
+<header>
+    {% if usuario %}
+    <ul>
+        <li><a href="./?action=logout">Cerrar sesion</a></li>
+    </ul>
+    <ul>
+        <li><a href="./?action=denuncia_list">Ver denuncias</a></li>
+    </ul>
+    {%else %}
+    <ul>
+        <li><a href="./?action=login_index">Iniciar sesion</a></li>
+    </ul>
+
+    {%endif%}
+    <ul>
+        <li><a href="./?action=denuncia_form">Hacer denuncia</a></li>
+    </ul>
+    <ul>
+        <li><a href="./?action=">Home</a></li>
+    </ul>
+</header>

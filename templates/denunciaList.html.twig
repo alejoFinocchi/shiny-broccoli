@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+{%block content%}
+{%for denuncia in denuncias%}
+
+    <li>  Direccion: {{denuncia.direccion}} Cantidad de menores: {{denuncia.cant_menores}} Descripcion:{{denuncia.descripcion}}<a href="./?action=asignar&id={{denuncia.id}}">Asignar wea</a></li>
+{%endfor%}
+{%endblock%}
